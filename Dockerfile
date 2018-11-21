@@ -24,4 +24,4 @@ RUN touch info.log
 
 EXPOSE 5000
 
-ENTRYPOINT python3 app.py >> info.log 2>&1 &
+ENTRYPOINT python3 app.py
