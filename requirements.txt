@@ -1,0 +1,6 @@
+rsa
+flask
+requests
+beautifulsoup4
+flask-jwt
+html5lib
