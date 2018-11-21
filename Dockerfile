@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER yuan
 ENV active prod
 
-RUN apt-get update -y && apt-get upgrade -y && apt-get install python3-pip
+RUN apt-get update -y && apt-get upgrade -y && apt-get install python3-pip -y
 
 RUN apt install tzdata
 
