@@ -16,8 +16,10 @@ def hello_world():
 
 @app.before_request
 def before():
+    print(request.path)
     if request.path in ['/login']:
         return
+    print(request.path)
     token = request.headers.get("token")
     if token is None:
         return jsonify({'msg': 'token不能为空', 'code': 400})
